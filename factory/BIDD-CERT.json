@@ -1,0 +1,9 @@
+{
+	"name": "BIDD-CERT",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "18507a22-50c0-498c-8230-429a3f99950e",
+		"tenantId": "f6b6dd5b-f02f-441a-99a0-162ac5060bd2"
+	}
+}
