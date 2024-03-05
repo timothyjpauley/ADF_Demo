@@ -219,7 +219,7 @@
 				]
 			},
 			{
-				"name": "DS_Clinics_copy1",
+				"name": "DS_Doctors",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
