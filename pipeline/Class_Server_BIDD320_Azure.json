@@ -21,13 +21,75 @@
 						"partitionOption": "None"
 					},
 					"sink": {
-						"type": "AzureSqlSink",
+						"type": "SqlServerSink",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "DoctorsShiftID",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "DoctorsShiftID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ShiftDate",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "ShiftDate",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "ClinicID",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "ClinicID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ShiftID",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "ShiftID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DoctorID",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "DoctorID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
@@ -43,7 +105,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable_BIDD320",
+						"referenceName": "SqlServerDatabase_DoctorsSchedules",
 						"type": "DatasetReference"
 					}
 				]
