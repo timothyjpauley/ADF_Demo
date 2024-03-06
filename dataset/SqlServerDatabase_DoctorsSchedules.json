@@ -1,0 +1,43 @@
+{
+	"name": "SqlServerDatabase_DoctorsSchedules",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_DoctorsSchedules",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "DoctorsShiftID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ShiftDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ClinicID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ShiftID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DoctorID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Doctors"
+		}
+	}
+}
